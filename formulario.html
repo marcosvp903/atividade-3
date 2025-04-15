@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Automotivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Formulário sobre Carros</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+
+      <label>Nome:
+        <input type="text" name="nome" required>
+      </label><br>
+
+      <label>Email:
+        <input type="email" name="email" required>
+      </label><br>
+
+      <label>Cidade:
+        <input type="text" name="cidade">
+      </label><br>
+
+      <label>Idade:
+        <input type="number" name="idade" min="10" max="100">
+      </label><br>
+    </fieldset>
+
+<fieldset>
+ <legend>Preferências Automotivas</legend>
+ 
+<label>Marca favorita:</label><br>
+ <input type="radio" name="marca" value="Toyota" required> Toyota<br>
+<input type="radio" name="marca" value="Honda" required> Honda<br>
+<input type="radio" name="marca" value="BMW" required> BMW<br>
+
+<label>Tipos de carro que você gosta:</label><br>
+<input type="checkbox" name="tipos[]" value="SUV" required> SUV<br>
+<input type="checkbox" name="tipos[]" value="Sedan"> Sedan<br>
+<input type="checkbox" name="tipos[]" value="Hatch"> Hatch<br>
